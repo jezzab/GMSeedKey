@@ -869,7 +869,7 @@ namespace GMSeedKey
                             opcode_comp(data);
                             break;
                         case 55:
-                            opcode_add_and(data);
+                            opcode_and(data);
                             break;
                         case 76:
                             opcode_rol_mod(data);
@@ -903,7 +903,7 @@ namespace GMSeedKey
             key -= data;
         }
 
-        public static void opcode_add_and(ushort data) {
+        public static void opcode_and(ushort data) {
             key &= data;
         }
 
