@@ -916,7 +916,7 @@ namespace GMSeedKey
         }
 
         public static void opcode_swap_or(ushort data) {
-            key -= (ushort)((ushort)(data << 8) | (byte)(data >> 8));
+            key |= (ushort)((ushort)(data << 8) | (byte)(data >> 8));
         }
 
         public static void opcode_swap_add(ushort data) {
